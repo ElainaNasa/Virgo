@@ -1,0 +1,42 @@
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+var/
+*.jsonl
+.env
+data/math/test/
+data/math/source/
+data/bigcodebench/*.parquet
+data/swebench/SWE-bench/
+data/swebench/swe-bench-tasks/
+data/swebench/hf-cache/
+data/swebench/*.jsonl
+var/swebench/
+
+# 本地凭据、系统缓存和构建产物
+.DS_Store
+.env.*
+!.env.example
+*.egg-info/
+
+# 本地数据集、实验输出和参考论文
+/data/
+/logs/
+/aime_output/
+/论文/
+/virgo.*.json
+lab/**/runs/
+lab/**/mixed_runs/
+
+# 本地下载的第三方仓库；保留 lab 中的适配代码与安装脚本
+/lab/agent_prune/AgentPrune/
+/lab/macnet/ChatDev/
+/lab/llm_debate/llm_multiagent_debate/
+
+# 含本地专用凭据的诊断脚本
+/scripts/diagnose_moonshot_access.py
+
+# 根目录仅保留 virgo 源码目录，忽略其他所有目录
+/*/
+!/virgo/
